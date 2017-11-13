@@ -5,4 +5,8 @@ module ActiveSupport
   class TestCase
     fixtures :all
   end
+
+  def is_logged_in?
+    !session[:user_id].nil?
+  end
 end

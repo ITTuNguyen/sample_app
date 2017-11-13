@@ -38,6 +38,11 @@ en:
       li1: "Home"
       li2: "Help"
       li3: "Log in"
+      a1: "Account"
+      link1: "Users"
+      link2: "Profile"
+      link3: "Settings"
+      link4: "Log out"
     footer:
       p1: "The"
       p2: "by"
@@ -84,3 +89,8 @@ en:
   controller:
     succ: "Welcome to the Sample App!"
     err: "No find id user"
+    session: "Invalid email/password combination"
+  session:
+    title: "Login"
+    p: "New user? "
+    link: "Sign up now!"
