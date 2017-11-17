@@ -52,6 +52,7 @@ en:
       p1: "This is the home page for the"
       a: "Ruby on Rails Tutorial"
       p2: "sample application."
+      signup: "Sign up now!"
     help:
       title: "Help"
       p1: "Get help on the Ruby on Rails Tutorial at the"
@@ -76,4 +77,10 @@ en:
       a: "contact page"
   users:
     title: "Sign up"
-    p: "This will be a signup page for new users."
+    submit: "Create my account"
+    pass: "Confirmation"
+  shared:
+    error: "The form contains"
+  controller:
+    succ: "Welcome to the Sample App!"
+    err: "No find id user"
