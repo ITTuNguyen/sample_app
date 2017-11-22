@@ -6,14 +6,14 @@
         <li><%= link_to t("layout.header.li1"), root_path %></li>
         <li><%= link_to t("layout.header.li2"), help_path %></li>
         <% if logged_in? %>
-          <li><%= link_to t("layout.header.link1"), '#' %></li>
+          <li><%= link_to t("layout.header.link1"), users_path %></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <%=t"layout.header.a1" %><b class="caret"></b>
             </a>
             <ul class="dropdown-menu">
               <li><%= link_to t("layout.header.link2"), current_user %></li>
-              <li><%= link_to t("layout.header.link3"), '#' %></li>
+              <li><%= link_to t("layout.header.link3"), edit_user_path(current_user) %></li>
               <li class="divider"></li>
               <li>
                 <%= link_to t("layout.header.link4"), logout_path, method: :delete %>

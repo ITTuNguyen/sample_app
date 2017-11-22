@@ -2,5 +2,7 @@ user:
   maximum_name: 50
   maximum_email: 255
   minimum_pass: 6
+  size: 50
+  sizeuser: 80
 remember:
   ischeck: "1"
