@@ -8,7 +8,9 @@ class UsersController < ApplicationController
     @users = User.paginate(page: params[:page])
   end
 
-  def show; end
+  def show
+    @microposts = @user.microposts.paginate(page: params[:page])
+  end
 
   def new
     @user = User.new
@@ -56,6 +58,10 @@ class UsersController < ApplicationController
 
   def user_params
     params.require(:user).permit :name, :email, :password, :password_confirmation
+  end
+
+  def load_user
+    @user = User.find_by id: params[:id]
   end
 
   def logged_in_user
