@@ -51,6 +51,9 @@ en:
       li1: "About"
       li2: "Contact"
       li3: "News"
+    user:
+      del: "delete"
+      conf: "You sure?"
   static_pages:
     home:
       title: "Welcome to the Sample App"
@@ -84,12 +87,24 @@ en:
     title: "Sign up"
     submit: "Create my account"
     pass: "Confirmation"
+    edit:
+      title: "Edit user"
+      h1: "Update your profile"
+      pass: "Confirmation"
+      a: "change"
+      submit: "Save changes"
+    index:
+      title: "All users"
   shared:
     error: "The form contains"
   controller:
     succ: "Welcome to the Sample App!"
     err: "No find id user"
     session: "Invalid email/password combination"
+    edit: "Profile updated"
+    unless: "Please log in."
+    del: "User deleted"
+    fail: "Delete error"
   session:
     title: "Login"
     p: "New user? "
