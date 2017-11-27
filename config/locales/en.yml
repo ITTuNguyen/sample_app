@@ -30,6 +30,15 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  mailer:
+    subject: "Account activation"
+    user_mailer:
+      password_reset: "Hi"
+  views:
+    user_mailer:
+      password_reset:
+        h1: "User#password_reset"
+        p: "find me in app/views/user_mailer/password_reset.html.erb"
   layout:
     application:
       title: "Ruby on Rails Tutorial Sample App"
@@ -83,6 +92,11 @@ en:
       title: "Contact"
       p: "Contact the Ruby on Rails Tutorial about the sample app at the"
       a: "contact page"
+  user_mailer:
+    h1: "Sample App"
+    p1: "Hi"
+    p2: "Welcome to the Sample App! Click on the link below to activate your account:"
+    link: "Activate"
   users:
     title: "Sign up"
     submit: "Create my account"
@@ -105,6 +119,11 @@ en:
     unless: "Please log in."
     del: "User deleted"
     fail: "Delete error"
+    info: "Please check your email to activate your account."
+    message1: "Account not activated. Check your email for the activation link."
+    acti:
+      succ: "Account activated!"
+      danger: "Invalid activation link"
   session:
     title: "Login"
     p: "New user? "

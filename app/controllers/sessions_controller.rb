@@ -11,9 +11,15 @@ class SessionsController < ApplicationController
   end
 
   def valid_user user
-    log_in user
-    params[:session][:remember_me] == Settings.remember.ischeck ? remember(user) : forget(user)
-    redirect_back_or user
+    if user.activated?
+      log_in user
+      params[:session][:remember_me] == Settings.remember.ischeck ? remember(user) : forget(user)
+      redirect_back_or user
+    else
+      message = t "controller.message1"
+      flash[:warning] = message
+      redirect_to root_url
+    end
   end
 
   def invalid_user
