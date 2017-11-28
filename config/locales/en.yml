@@ -119,8 +119,15 @@ en:
       title: "All users"
     show:
       h3: "Microposts"
+    follow:
+      submit: "Follow"
+    unfollow:
+      submit: "Unfollow"
   shared:
     error: "The form contains"
+    stats:
+      following: "following"
+      followers: "followers"
   controller:
     succ: "Welcome to the Sample App!"
     err: "No find id user"
@@ -159,5 +166,6 @@ en:
     shared:
       plac: "Compose new micropost..."
       submit: "Post"
+
 
 
